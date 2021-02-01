@@ -1,0 +1,109 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  height: 100vh;
+}
+
+.chat > .chat__header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chatHeader__left {
+  display: flex;
+  align-items: center;
+}
+
+.chatHeader__left > h5 {
+  margin-left: 15px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.chatHeader__right {
+  display: flex;
+  align-items: center;
+}
+
+.chatHeader__right > .MuiSvgIcon-root {
+  color: rgb(197, 197, 197);
+  margin-right: 5px;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.chatHeader__right > .MuiSvgIcon-root:hover {
+  color: white;
+}
+.chat__body {
+  flex: 1;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.chat__body::-webkit-scrollbar {
+  display: none;
+}
+
+.chat__footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.chat__footer > .MuiSvgIcon-root {
+  color: gray;
+  font-size: xx-large;
+  cursor: pointer;
+}
+
+.chat__footer > .MuiSvgIcon-root:hover {
+  color: yellow;
+  font-size: xx-large;
+}
+
+.chat__footer > form {
+  display: flex;
+  flex: 1;
+}
+.chat__footer > form > input {
+  margin-left: 10px;
+  background-color: rgb(70, 70, 70);
+  padding: 10px;
+  border-radius: 33px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+}
+
+.chat__footer > form > button {
+  display: none;
+}
+
+.chat__footerIcons {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.chat__footerIcons > .MuiSvgIcon-root {
+  color: gray;
+  font-size: xx-large;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.chat__footerIcons > .MuiSvgIcon-root:hover {
+  color: rgb(0, 183, 255);
+}
+
+.chat__footer > form > input:focus {
+  border: 1px solid rgb(0, 183, 255);
+}

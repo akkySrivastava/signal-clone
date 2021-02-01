@@ -1,0 +1,64 @@
+.message {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.message__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message__header > .MuiAvatar-root {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.message__header > h3 {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+}
+
+.message__info > .message__content {
+  margin-left: auto;
+  margin-top: 30px;
+  color: lightgray;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgba(146, 143, 143, 0.2);
+  width: fit-content;
+}
+
+.message__infoSender > .message__content {
+  margin-top: 30px;
+  color: lightgray;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  width: fit-content;
+  background-color: blue;
+}
+.message__content > small {
+  margin-right: 0px;
+  position: absolute;
+  margin-top: 15px;
+  right: 0;
+}
+.message__content > small {
+  margin-right: 0px;
+  position: absolute;
+  margin-top: 15px;
+  right: 0;
+}
+
+.message__content > span {
+  color: rgb(155, 155, 155);
+  font-size: small;
+  border-bottom: 1px solid rgb(119, 119, 119);
+}

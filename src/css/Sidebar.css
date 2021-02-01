@@ -1,0 +1,86 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.75);
+  flex: 0.3;
+  height: 100vh;
+}
+
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.sidebar__header > .MuiAvatar-root {
+  width: 30px;
+  height: 30px;
+}
+.sidebar__header > .sidebar__input {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 33px;
+  padding: 5px;
+  width: 100%;
+}
+
+.sidebar__header > .sidebar__input:hover {
+  border: 1px solid rgb(0, 140, 255);
+}
+
+.sidebar__input > input {
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.sidebar__input > .MuiSvgIcon-root {
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  margin-left: 5px;
+}
+
+.sidebar__chats {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.sidebar__notes {
+  padding: 10px;
+  display: flex;
+  cursor: pointer;
+}
+
+.sidebar__notes:hover {
+  background-color: rgba(151, 151, 151, 0.6);
+}
+.sidebar__notesIcon {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__notesIcon > p {
+  margin-left: 10px;
+}
+
+.sidebar__note {
+  background-color: rgba(95, 33, 33, 0.294);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.sidebar__note > .MuiSvgIcon-root {
+  font-size: xx-large;
+  color: white;
+}
+
+.sidebar__notesIcon > p {
+  color: white;
+  font-weight: 600;
+}

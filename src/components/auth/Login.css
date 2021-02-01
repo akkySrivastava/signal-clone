@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+
+.login {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.login > .login__logo {
+  display: flex;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__logo > img {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.login > p {
+  color: lightgray;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 23px;
+  text-align: center;
+}
+
+.login > h3 {
+  font-family: "Cedarville Cursive", cursive;
+  color: white;
+  font-size: 2.1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.login__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.login__button > button {
+  padding: 10px;
+  width: 70vw;
+  color: white;
+  background-color: rgb(65, 116, 255);
+  border: none;
+  outline: none;
+  font-weight: 500;
+  border-radius: 33px;
+  cursor: pointer;
+  font-size: x-large;
+}
+.login__button > button:hover {
+  color: blue;
+  background-color: white;
+}
