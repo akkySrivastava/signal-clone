@@ -16,6 +16,7 @@ import {
 import db from "../firebase";
 import { selectUser } from "../features/userSlice";
 import firebase from "firebase";
+import FlipMove from "react-flip-move";
 
 function Chat() {
   const chatImage = useSelector(selectChatImage);
@@ -76,16 +77,18 @@ function Chat() {
           <Avatar src={chatImage} />
           <h3>{name}</h3>
         </div>
-        {messages.map(({ id, message }) => (
-          <Message
-            key={id}
-            id={id}
-            message={message.message}
-            timestamp={message.timestamp}
-            sender={message.user.email}
-            senderName={message.user.displayName}
-          />
-        ))}
+        <FlipMove>
+          {messages.map(({ id, message }) => (
+            <Message
+              key={id}
+              id={id}
+              message={message.message}
+              timestamp={message.timestamp}
+              sender={message.user.email}
+              senderName={message.user.displayName}
+            />
+          ))}
+        </FlipMove>
       </div>
       <div className="chat__footer">
         <EmojiEmotions />

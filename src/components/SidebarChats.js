@@ -1,12 +1,12 @@
 import { Avatar } from "@material-ui/core";
-import React, { useEffect, useState } from "react";
+import React, { forwardRef, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "../css/SidebarChats.css";
 import { selectChatId, setChatInfo } from "../features/chatSlice";
 import db from "../firebase";
 import * as timeago from "timeago.js";
 
-function SidebarChats({ id, name, chatImage }) {
+const SidebarChats = forwardRef(({ id, name, chatImage }, ref) => {
   const dispatch = useDispatch();
   const chatId = useSelector(selectChatId);
 
@@ -24,6 +24,7 @@ function SidebarChats({ id, name, chatImage }) {
 
   return (
     <div
+      ref={ref}
       className="sidebarChat"
       onClick={() =>
         dispatch(
@@ -43,6 +44,6 @@ function SidebarChats({ id, name, chatImage }) {
       </div>
     </div>
   );
-}
+});
 
 export default SidebarChats;
